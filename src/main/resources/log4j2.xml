@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%clr{%d{HH:mm:ss}}{faint} %clr{[%6t]}{faint} %clr{%-5level}{magenta} %clr{%logger{36}}{cyan} - %msg%n" />
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="org.springframework" level="info" />
+        <Logger name="org.spring.jdbc" level="info" />
+        <Logger name="com.zaxxer.hikari" level="error" />
+        <Root level="info">
+            <AppenderRef ref="Console" />
+        </Root>
+    </Loggers>
+</Configuration>
